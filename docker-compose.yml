@@ -30,5 +30,3 @@ services:
       restart: unless-stopped
       links:
         - prometheus:prometheus
-      volumes:
-        - ./data/grafana:/var/lib/grafana
