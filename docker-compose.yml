@@ -2,6 +2,7 @@ version: "3"
 services:
     prometheus:
       image: prom/prometheus:latest
+      user: root
       container_name: monitoring_prometheus
       restart: unless-stopped
       volumes:
