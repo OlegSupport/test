@@ -27,6 +27,7 @@ services:
       expose:
         - 9100
 
+
     grafana:
       image: grafana/grafana:latest
       container_name: monitoring_grafana
