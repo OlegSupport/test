@@ -1,3 +1,4 @@
+
 version: "3"
 services:
     prometheus:
@@ -32,3 +33,7 @@ services:
       restart: unless-stopped
       links:
         - prometheus:prometheus
+      expose:
+        - 3000
+      ports:
+        - 3000:3000
