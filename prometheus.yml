@@ -38,4 +38,4 @@ scrape_configs:
     scheme: http
     static_configs:
     - targets:
-      - l3.19.56.169       
+      - 3.19.56.169       
