@@ -4,6 +4,7 @@ RUN apt update \
     nano \
     curl
 COPY index.html /usr/share/nginx/html/index.html
+RUN rm -r /etc/nginx/conf.d/default.conf
 COPY default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
