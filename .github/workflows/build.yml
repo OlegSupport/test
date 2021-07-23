@@ -1,8 +1,8 @@
 name: Build
 on:
-  push:
-    branches:
-      - master # or the name of your main branch
+    release:
+        types:
+            - published
 jobs:
   build:
     name: Build
